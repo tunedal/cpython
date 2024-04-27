@@ -1068,16 +1068,17 @@ The :mod:`subprocess` module exposes the following constants.
 
 .. data:: STARTF_FORCEONFEEDBACK
 
-   Tells Windows to display the *Working in Background* mouse cursor
-   while a process is launching. This is the default behavior for GUI
+   A :attr:`STARTUPINFO.dwFlags` parameter to specify that the
+   *Working in Background* mouse cursor will be displayed while a
+   process is launching. This is the default behavior for GUI
    processes.
 
    .. versionadded:: 3.13
 
 .. data:: STARTF_FORCEOFFFEEDBACK
 
-   Tells Windows not to change to mouse cursor when launching the
-   process.
+   A :attr:`STARTUPINFO.dwFlags` parameter to specify that mouse
+   cursor will not be changed when launching the process.
 
    .. versionadded:: 3.13
 
